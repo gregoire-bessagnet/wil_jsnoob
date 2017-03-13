@@ -11,22 +11,21 @@
 
 <script>
 
-  choice = prompt('Hey mon ami ! Tu aimes ça les patates ? - Réponds par oui ou non')
+var reponse = prompt("Hey mon ami ! Tu aimes ça les patates ?", "<Entrez ici oui ou non>");
 
-  function displayPotatoes(choice){
+if (reponse == "oui"){
+  var patates = ["#", "#", "#", "#", "#", "#", "#" ];
+  var tas = [];
+  for (i = 0; i < patates.length; i++) { 
+    tas.push(patates[i]);
+     console.log(tas.join(""));
+  }
+}
+else if (reponse == "non"){
+  alert('haha')
+}
+else alert('Je vous sens comme tiraillé')
 
-     if choice = oui;
-        for (i = 0; i < 7; i++){
-          var potatoe = '#'
-          potatoe += i;
-        };
-
-      else if choice = non;
-        alert('Quel dommage ! Tu préfères les concombres ?');
-
-      else
-        alert('Je vous sens comme tiraillé');
-  };
 </script>
 
 </body>
